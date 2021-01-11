@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <div> 
+        <nav id="navbar">
+        <header class="title">HTML Documentation. </header>
+          <ul>
+           
+            <li> <a class="nav-link" href="#introduction" rel="internal">Introduction</a></li>
+            
+              <li> <a class="nav-link" href="#what-you-should-know" rel="internal">What you should know</a></li>
+            
+            <li> <a class="nav-link" href="#anatomy-of-an-html-element" rel="internal">Anatomy of an HTML Element</a></li>
+            
+            <li> <a class="nav-link" href="#html-attributes" rel="internal">HTML Attributes</a></li>
+            
+            <li><a class="nav-link" href="#html-forms" rel="internal">HTML Forms</a></li>
+            
+            <li><a class="nav-link" href="#reference" rel="internal"> Reference</a></li>
+    
+            
+          </ul>
+      
+        </nav>
+      </div> 
+      
+      <div>
+        <main id="main-doc">
+          <section class="main-section" id="introduction">
+          <header>Introduction</header>
+            <article>
+              <p> HTML which stands for Hyper Text Mark-up Lanaguage is a fairly simple language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. Also,
+              <ul>
+                <li>HTML is the standard markup language for creating Web pages. </li>
+                <li>HTML describes the structure of a Web page. </li>
+                <li>HTML elements tell the browser how to display the content.</li>
+               </ul>
+                 
+               </p>
+            </article>
+            
+          </section>
+         
+        <section class="main-section" id="what-you-should-know">
+          <header>What You Should Know</header>
+          <article>
+            <p>
+              <ul>
+          <li> HTML is not a programming language</li>
+                <li> HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.
+</li>
+                <li>Tags in HTML are case-insensitive. This means they can be written in uppercase or lowercase. However, it is best practice to write all tags in lowercase for consistency, readability, and other reasons.</li>
+            </ul>
+            
+           
+            </p></article>
+        </section>
+      
+      <section class="main-section" id="anatomy-of-an-html-element">
+                                        <header>Anatomy of an HTML Element </header>
+     <p>                                   
+        <img class="img-responsive" 
+                    src="https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png" alt="anatomy_of_an_html_element">
+       <br>
+       The anatomy of our element is:
+        <ol>
+<li>The opening tag: This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+          <br>
+          <li>The content: This is the content of the element. In this example, it is the paragraph text.</li>
+          <br>
+<li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+          </ol>
+   </p>   
+    </section>
+    <section  class="main-section" id="html-attributes">
+      <header>HTML Attributes </header>
+      <article>
+        <p> 
+          <ul>
+            <li>All HTML elements can have attributes</li>
+            <li>Attributes provide additional information about elements</li>
+            <li>Attributes are always specified in the start tag,</li>
+            <li>Attributes usually come in name/value pairs like: name="value"</li>
+        
+ </ul>
+        the following are a few types of attributes:
+        <br>
+        <h4> The Href Atributes</h4>
+       <xmp>The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+ Example
+<a href="https://www.w3schools.com">Visit W3Schools</a></xmp>
+         <br>
+         <h4>  The Width and Height Attributes</h4>
+<xmp >The <img> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels):
+
+Example
+<img src="img_girl.jpg" width="500" height="600"> </xmp>    <br>
+         <h4> The title Attribute</h4>
+The title attribute defines some extra information about an element.
+
+The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+
+Example
+         <xmp><p title="I'm a tooltip">This is a paragraph.</p ></xmp>
+       </p></article>
+    </section>
+    
+    <section class="main-section" id="html-forms">
+      <header>HTML Forms</header>
+      <article>
+        <p>
+          An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+        <h4><xmp>The <form> Element</xmp> </h4>
+          <br>
+        <xmp>  The HTML <form> element is used to create an HTML form for user input:
+
+<form>
+.
+form elements
+.
+</form>
+The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc</xmp>
+          <br>
+          <xmp><h4>The <input> Element </h4></xmp>
+            <xmp>The HTML <input> element is the most used form element.
+
+An <input> element can be displayed in many ways, depending on the type attribute.
+
+Here are some examples:
+            
+Type	                     Description
+<input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button</xmp>
+          <br>
+         <h4><xmp>The <label> Element</xmp></h4>
+<xmp>Notice the use of the <label> element in the example above.
+
+The <label> tag defines a label for many form elements.
+
+The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+
+The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+
+The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.</xmp>
+      </p>
+        
+      </article>
+      </section>
+  
+  <section class="main-section" id="reference">
+    <header>Reference
+    </header>
+    <p>
+      <ul>
+        <li>All documentations are taken from<a href="https://www.w3schools.com/html/default.asp" target="_blank"> w3school.com</a></p>
+    </li>
+  </ul>
+    
+    
+    
+    
+    
+  </section>
+          
+        </main>
+
+        </div>
+  </div>  
+  </body>    
+<body>
+    <div class="container">
+      <div> 
+        <nav id="navbar">
+        <header class="title">HTML Documentation. </header>
+          <ul>
+           
+            <li> <a class="nav-link" href="#introduction" rel="internal">Introduction</a></li>
+            
+              <li> <a class="nav-link" href="#what-you-should-know" rel="internal">What you should know</a></li>
+            
+            <li> <a class="nav-link" href="#anatomy-of-an-html-element" rel="internal">Anatomy of an HTML Element</a></li>
+            
+            <li> <a class="nav-link" href="#html-attributes" rel="internal">HTML Attributes</a></li>
+            
+            <li><a class="nav-link" href="#html-forms" rel="internal">HTML Forms</a></li>
+            
+            <li><a class="nav-link" href="#reference" rel="internal"> Reference</a></li>
+    
+            
+          </ul>
+      
+        </nav>
+      </div> 
+      
+      <div>
+        <main id="main-doc">
+          <section class="main-section" id="introduction">
+          <header>Introduction</header>
+            <article>
+              <p> HTML which stands for Hyper Text Mark-up Lanaguage is a fairly simple language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page. Also,
+              <ul>
+                <li>HTML is the standard markup language for creating Web pages. </li>
+                <li>HTML describes the structure of a Web page. </li>
+                <li>HTML elements tell the browser how to display the content.</li>
+               </ul>
+                 
+               </p>
+            </article>
+            
+          </section>
+         
+        <section class="main-section" id="what-you-should-know">
+          <header>What You Should Know</header>
+          <article>
+            <p>
+              <ul>
+          <li> HTML is not a programming language</li>
+                <li> HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.
+</li>
+                <li>Tags in HTML are case-insensitive. This means they can be written in uppercase or lowercase. However, it is best practice to write all tags in lowercase for consistency, readability, and other reasons.</li>
+            </ul>
+            
+           
+            </p></article>
+        </section>
+      
+      <section class="main-section" id="anatomy-of-an-html-element">
+                                        <header>Anatomy of an HTML Element </header>
+     <p>                                   
+        <img class="img-responsive" 
+                    src="https://mdn.mozillademos.org/files/9347/grumpy-cat-small.png" alt="anatomy_of_an_html_element">
+       <br>
+       The anatomy of our element is:
+        <ol>
+<li>The opening tag: This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+          <br>
+          <li>The content: This is the content of the element. In this example, it is the paragraph text.</li>
+          <br>
+<li>The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+          </ol>
+   </p>   
+    </section>
+    <section  class="main-section" id="html-attributes">
+      <header>HTML Attributes </header>
+      <article>
+        <p> 
+          <ul>
+            <li>All HTML elements can have attributes</li>
+            <li>Attributes provide additional information about elements</li>
+            <li>Attributes are always specified in the start tag,</li>
+            <li>Attributes usually come in name/value pairs like: name="value"</li>
+        
+ </ul>
+        the following are a few types of attributes:
+        <br>
+        <h4> The Href Atributes</h4>
+       <xmp>The <a> tag defines a hyperlink. The href attribute specifies the URL of the page the link goes to:
+ Example
+<a href="https://www.w3schools.com">Visit W3Schools</a></xmp>
+         <br>
+         <h4>  The Width and Height Attributes</h4>
+<xmp >The <img> tag should also contain the width and height attributes, which specifies the width and height of the image (in pixels):
+
+Example
+<img src="img_girl.jpg" width="500" height="600"> </xmp>    <br>
+         <h4> The title Attribute</h4>
+The title attribute defines some extra information about an element.
+
+The value of the title attribute will be displayed as a tooltip when you mouse over the element:
+
+Example
+         <xmp><p title="I'm a tooltip">This is a paragraph.</p ></xmp>
+       </p></article>
+    </section>
+    
+    <section class="main-section" id="html-forms">
+      <header>HTML Forms</header>
+      <article>
+        <p>
+          An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+        <h4><xmp>The <form> Element</xmp> </h4>
+          <br>
+        <xmp>  The HTML <form> element is used to create an HTML form for user input:
+
+<form>
+.
+form elements
+.
+</form>
+The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc</xmp>
+          <br>
+          <xmp><h4>The <input> Element </h4></xmp>
+            <xmp>The HTML <input> element is the most used form element.
+
+An <input> element can be displayed in many ways, depending on the type attribute.
+
+Here are some examples:
+            
+Type	                     Description
+<input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button</xmp>
+          <br>
+         <h4><xmp>The <label> Element</xmp></h4>
+<xmp>Notice the use of the <label> element in the example above.
+
+The <label> tag defines a label for many form elements.
+
+The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focus on the input element.
+
+The <label> element also help users who have difficulty clicking on very small regions (such as radio buttons or checkboxes) - because when the user clicks the text within the <label> element, it toggles the radio button/checkbox.
+
+The for attribute of the <label> tag should be equal to the id attribute of the <input> element to bind them together.</xmp>
+      </p>
+        
+      </article>
+      </section>
+  
+  <section class="main-section" id="reference">
+    <header>Reference
+    </header>
+    <p>
+      <ul>
+        <li>All documentations are taken from<a href="https://www.w3schools.com/html/default.asp" target="_blank"> w3school.com</a></p>
+    </li>
+  </ul>
+    
+    
+    
+    
+    
+  </section>
+          
+        </main>
+
+        </div>
+  </div>  
+  </body>    
+</html>
